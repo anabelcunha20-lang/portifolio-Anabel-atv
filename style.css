@@ -1,0 +1,47 @@
+body {
+  font-family: 'Arial', Times, serif, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #6e5e49;
+  color: rgb(92, 75, 34);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: rgb(126, 111, 85);
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+#lista-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  border: 1px solid #3b3b19;
+  padding: 10px;
+  width: 250px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lista-projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
